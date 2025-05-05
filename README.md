@@ -36,6 +36,89 @@ Used as the development environment, often with Bash commands and scripts to man
 
 ### 🛡️ API Security
 Best practices implemented to secure endpoints, authenticate users, and prevent vulnerabilities such as SQL injection and cross-site scripting (XSS).
+## Database Design
+
+The database design for the AirBnB Clone project includes several key entities that model the core features of the platform. Below is an overview of the primary entities, their important fields, and their relationships.
+
+### 🧑 Users
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `created_at`
+
+**Relationship:** A user can own multiple properties and make multiple bookings. A user can also leave reviews and make payments.
+
+---
+
+### 🏠 Properties
+- `id` (Primary Key)
+- `owner_id` (Foreign Key to Users)
+- `title`
+- `location`
+- `price_per_night`
+
+**Relationship:** Each property is owned by a user and can have many bookings and reviews.
+
+---
+
+### 📅 Bookings
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `check_in_date`
+- `check_out_date`
+
+**Relationship:** A booking is made by a user for a specific property.
+
+---
+
+### ✍️ Reviews
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `rating`
+- `comment`
+
+**Relationship:** A user can leave a review for a property they’ve booked.
+
+---
+
+### 💳 Payments
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `booking_id` (Foreign Key to Bookings)
+- `amount`
+- `payment_date`
+
+**Relationship:** Each payment is tied to a user and a specific booking.
+
+---
+
+### Entity Relationships Summary:
+- A **User** can:
+  - own multiple **Properties**
+  - make multiple **Bookings**
+  - leave multiple **Reviews**
+  - make multiple **Payments**
+
+- A **Property**:
+  - is owned by one **User**
+  - can have many **Bookings**
+  - can receive many **Reviews**
+
+- A **Booking**:
+  - is made by one **User**
+  - is for one **Property**
+  - can have one **Payment**
+
+- A **Review**:
+  - is written by one **User**
+  - is about one **Property**
+
+- A **Payment**:
+  - is made by one **User**
+  - corresponds to one **Booking**
 
 
 ## 🔐 API Security
