@@ -9,14 +9,34 @@ This is a simplified clone of the popular Airbnb platform, created as part of th
 - Practice working with file storage, databases, and web frameworks.
 - Learn to collaborate using Git, GitHub, and coding best practices.
 
-## 🔧 Tech Stack
-- **Language**: Python 3
-- **Framework**: Flask
-- **Database**: MySQL
-- **ORM**: SQLAlchemy
-- **Front-End**: HTML, CSS, JavaScript
-- **Version Control**: Git & GitHub
-- **Testing**: Unittest
+## Technology Stack
+
+The AirBnB Clone project uses the following technologies to build a robust and scalable web platform:
+
+### 🐍 Python
+Primary programming language used to develop backend logic and APIs.
+
+### 🌐 Flask
+A lightweight web framework for building RESTful APIs. Handles routing, request/response handling, and middleware integration.
+
+### 🐬 MySQL
+Relational database system used to store and manage structured data such as user accounts, property listings, bookings, etc.
+
+### 🧪 Unittest
+Python’s built-in testing framework used to write unit and integration tests to ensure code reliability and prevent regressions.
+
+### 🔗 RESTful API
+Architectural style used to design the backend API, enabling communication between the frontend (if applicable) and backend over HTTP.
+
+### 🛠️ Git & GitHub
+Version control system used for tracking changes and collaborating as a team. GitHub hosts the repository and allows for issue tracking and pull requests.
+
+### ☁️ Linux/Ubuntu (CLI)
+Used as the development environment, often with Bash commands and scripts to manage server configurations, run programs, and automate tasks.
+
+### 🛡️ API Security
+Best practices implemented to secure endpoints, authenticate users, and prevent vulnerabilities such as SQL injection and cross-site scripting (XSS).
+
 
 ## 🔐 API Security
 To ensure secure access to the application:
