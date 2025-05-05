@@ -151,6 +151,25 @@ Maintains project documentation including the README, API documentation, and gui
 
 ### 🧭 Project Coordinator
 Tracks progress, manages timelines, organizes meetings, and ensures team alignment with ALX project deliverables and deadlines.
+Feature Breakdown
+1. User Management
+This feature allows users to register, log in, and manage their profiles. It includes user authentication and authorization to ensure secure access to the system.
+
+2. Property Management
+Hosts can list new properties, update existing ones, and manage availability. This feature enables the core functionality of showcasing homes for booking.
+
+3. Booking System
+Users can search for available properties based on filters like date and location, then make bookings. It ensures reservation handling, conflict checks, and availability updates.
+
+4. Payment Integration
+Handles payment processing for bookings through secure methods. This includes initiating, confirming, and tracking payments made by users.
+
+5. Reviews and Ratings
+Users can leave feedback and rate properties after their stay. This builds trust and transparency in the platform by helping future users make informed choices.
+
+6. Admin Dashboard
+Admins have access to user data, listings, and reports to monitor the platform's usage. It helps maintain platform quality, handle complaints, and resolve disputes.
+
 
 ## 👨‍💻 Team
 Developed by Muwanuguzi Mark Miiro and team as part of the ALX SE Curriculum.
