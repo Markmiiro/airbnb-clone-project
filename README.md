@@ -169,6 +169,36 @@ Users can leave feedback and rate properties after their stay. This builds trust
 
 6. Admin Dashboard
 Admins have access to user data, listings, and reports to monitor the platform's usage. It helps maintain platform quality, handle complaints, and resolve disputes.
+CI/CD Pipeline
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of integrating code changes, testing them, and deploying updates to production. This helps in maintaining code quality, reducing bugs, and delivering features quickly and reliably.
+
+For this project, the CI/CD pipeline will:
+
+Automatically run tests on every pull request or code commit to ensure stability.
+
+Build and deploy the application to staging or production environments.
+
+Alert the team of build failures or issues in real-time.
+
+Tools Used:
+GitHub Actions – To automate workflows for testing and deployment directly from our GitHub repository.
+
+Docker – To create consistent development, testing, and production environments.
+
+Heroku / Render / AWS – Optional deployment targets for hosting the web application.
+
+PostgreSQL – As the production-grade relational database integrated into the pipeline.
+
+Coverage Tools (e.g., Coveralls) – To measure code test coverage over time.
+
+Why It Matters:
+
+Speeds up development with fewer manual tasks.
+
+Reduces deployment risks and downtimes.
+
+Enables faster feedback and iteration cycles.
+
 
 
 ## 👨‍💻 Team
